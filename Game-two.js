@@ -5,7 +5,7 @@ let choices = ["rock", "paper", "scissors"];
 function declareWinner(userInput, computerInput, message){
     if(userInput === computerInput){
         message += "It's a tie";
-    }else if(computerInput > userInput){
+    }else if(computerInput < userInput){
         if(computerInput == 0 && userInput == 2){
             message += "Computer Wins";
         }else{
